@@ -11,5 +11,6 @@
 
 ### Any blocking issues/challenges need to be addressed?
 * we were introduced to scene builder as we were starting our ui 
- and started over with Scene Builder
+ and started over with Scene Builder, getting used to Scene Builder and
+ adding events for our buttons is paramount
 
