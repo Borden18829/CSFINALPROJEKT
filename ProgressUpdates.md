@@ -10,6 +10,6 @@
 * Start and complete the Super Class and subclasses
 
 ### Any blocking issues/challenges need to be addressed?
-*we were introduced to scene builder as we were starting our ui 
-* and started over with Scene Builder
+* we were introduced to scene builder as we were starting our ui 
+ and started over with Scene Builder
 
