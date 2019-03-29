@@ -30,7 +30,7 @@
  and started over with Scene Builder, getting used to Scene Builder and
  adding events for our buttons is paramount
 
-##Week 3 (March 24 - 29)
+## Week 3 (March 24 - 29)
 
 ### What did your team do last week?
 * We finished implementations and event handlers for our UI
