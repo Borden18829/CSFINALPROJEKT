@@ -13,8 +13,8 @@ import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 public class Person extends UserInterface implements Initializable {
-
-	
+	public static int gameType = 0;
+	public static int timeScale = 1;
 	public static String currentPerson = "Empty Slot";
 
 	public static void main(String[] args) {
@@ -34,6 +34,7 @@ public class Person extends UserInterface implements Initializable {
 		game.setItems(list2);
 
 		profile.getSelectionModel().select(0);
+		currentPerson = new String(profile.getValue());
 
 		play.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
@@ -42,15 +43,24 @@ public class Person extends UserInterface implements Initializable {
 					createPerson();
 					fillChoiceBox();
 				}
+				else if(gameType == 0) {
+					new QuickGame(timeScale, currentPerson);
+					System.out.print(currentPerson);
+				}
+				else {
+					new DetailedGame(timeScale, currentPerson);
+				}
+				
+	
 
 			}
 
 		});
 
-		preset.setOnAction(new EventHandler<ActionEvent>() {
+		profile.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
 			public void handle(ActionEvent event) {
-				currentPerson = new String(preset.getValue());
+				currentPerson = new String(profile.getValue());
 
 			}
 
@@ -98,7 +108,12 @@ public class Person extends UserInterface implements Initializable {
 	public void fillChoiceBox() {
 
 		for (int i = 0; i < 9; i++) {
+				if(people[i] == null) {
+					list3.add("Empty Slot");
+				}
+				else {
 				list3.add(people[i]);
+				}
 		}
 		if (list3.size() > 10) {
 			list3.remove(0, 9);
