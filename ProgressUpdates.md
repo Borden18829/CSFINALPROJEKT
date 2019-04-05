@@ -46,7 +46,7 @@
 * It is going to take a bit of work to have the game display information to the same 
 scene that is created in UserInterface.java
 
-## Week 3 (April 1 - April 5)
+## Week 4 (April 1 - April 5)
 
 ### What did your team do last week?
 * Started implementation of the quickGame class, mainly focusing on event Checker
