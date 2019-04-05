@@ -46,7 +46,20 @@
 * It is going to take a bit of work to have the game display information to the same 
 scene that is created in UserInterface.java
 
+## Week 3 (April 1 - April 5)
 
+### What did your team do last week?
+* Started implementation of the quickGame class, mainly focusing on event Checker
+* Added another file reader to take in event information
+* Added another save file that stored events and probabilities
+
+### What will you do this week?
+* Start working on displaying results and Game Over's
+* Plan for any possible effects or details
+* Finish event checker
+
+### Any blocking issues/challenges need to be addressed?
+* None at the moment, just a matter of time and effort in formatting the text files to be read
 
 
 
