@@ -43,16 +43,20 @@ public class Person extends UserInterface implements Initializable {
 					createPerson();
 					fillChoiceBox();
 				}
-				else if(gameType == 0) {
-					new QuickGame(timeScale, currentPerson);
-					System.out.print(currentPerson);
+				else {
+					
+				if(gameType == 0) {
+					QuickGame game1 = new QuickGame(timeScale, currentPerson);
+					game1.displayResults();
+				
 				}
 				else {
-					new DetailedGame(timeScale, currentPerson);
+					QuickGame game1 = new DetailedGame(timeScale, currentPerson);
+					game1.displayResults();
 				}
 				
-	
-
+				
+				}
 			}
 
 		});
@@ -61,6 +65,23 @@ public class Person extends UserInterface implements Initializable {
 			@Override
 			public void handle(ActionEvent event) {
 				currentPerson = new String(profile.getValue());
+
+			}
+
+		});
+		
+		preset.setOnAction(new EventHandler<ActionEvent>() {
+			@Override
+			public void handle(ActionEvent event) {
+				
+
+			}
+
+		});
+		game.setOnAction(new EventHandler<ActionEvent>() {
+			@Override
+			public void handle(ActionEvent event) {
+				
 
 			}
 
