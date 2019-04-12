@@ -1,38 +1,38 @@
 4
 Lungs
 Bronchitis
-100000
+1000
 Tuberculosis
-100000
+1000
 Pneumonia
-1000000
+2250
 Lung Cancer
-100000
+1000
 7
 Outdoor
 Struck by Lightning
-10000
+1000
 Attacked by a bear
-20
+275
 Attacked by a shark
-50
+500
 Attacked by a giraffe
-2
+200
 Attacked by a scary spider
-10000
+1000
 Fell off a cliff
-100000
+1750
 Fell off a roller-coaster
-1
+300
 5
 Society
 Won the lottery
-2
+20
 Got in a car crash
-1000000
+2400
 Got mugged
-70000
+700
 Got fired from your job
-10000
+100
 Got kidnapped
-1000
+300
