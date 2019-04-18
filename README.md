@@ -16,7 +16,9 @@
 
 ## Front End
 
-### The front end consists of a user interface class that is loaded from the backend via. FXML file made through SceneBuilder. This scene consists of buttons: play, profile, preset, stopOnDeath, timeScale, numRuns which affect the variables that are used in the back end. All of the implementations of these buttons are handled in the Person class that inherits the User Interface class. Once the classes in the backend finish their calculations the results are printed onto a scroll pane in original scene.
+### The front end consists of a user interface class that is loaded from the backend via. FXML file made through SceneBuilder. This scene consists of buttons: play, profile, preset, stopOnDeath, timeScale, numRuns which affect the variables that are used in the back end. All of the implementations of these buttons are handled in the Person class that inherits the User Interface class. Once the classes in the backend finish their calculations the results are printed onto a scroll pane in original scene. 
+
+## NOTE: buttons createNewEvent and gameType do not have implementations
 
 ## Back End
 
@@ -26,3 +28,7 @@
 #### 2. Name of Category
 #### 3. Name of the Event
 #### 4. Probability of event, repeat 3 and 4 until the size of category is reached.
+
+### When these events are read and stored in two two-dimensional arrays (one for int probabilities and one for string names), every individual event is tested by testing if a random value out of 24,000,000 times timeScale (1 for years, 12 for months, 365 for days) and see if it is less than the probability of that event. If an event fires, a result in the proper format is added to text and added to a VBox that will be applied by the Scroll Pane passed in from the person class.
+
+
