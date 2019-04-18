@@ -8,8 +8,10 @@ Pneumonia
 2250
 Lung Cancer
 1000
-7
+8
 Outdoor
+Gored by a unicorn :D
+1000
 Struck by Lightning
 1000
 Attacked by a bear
