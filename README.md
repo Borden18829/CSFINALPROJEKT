@@ -64,6 +64,6 @@
 
 # Team Members
 
-## Ray Borden, Lead Designer
+## Ray Borden, Lead Designer, Head Programmer
 
-## Chandler Dreyfuss, head programmer
+## Chandler Dreyfuss, Head of the Division for Morale Support
