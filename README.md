@@ -62,6 +62,9 @@
 
 ## A choice from 1 to 5 for the number of runs to calculate, after an event is fired or the character dies (depending on StopOnDeath) the number of current runs is incremented by one and stops when it equals numRuns.
 
+# DEMO VIDEO
+## https://youtu.be/wcVrC3sa3HA
+
 # Team Members
 
 ## Ray Borden, Lead Designer, Head Programmer
