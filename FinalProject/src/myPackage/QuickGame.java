@@ -9,20 +9,34 @@ import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
 
 public class QuickGame  implements game {
-	// lots of data :/
+	
+	//Values passed from person class
 	public int timeScale;
 	public int gameType;
 	public static int numEvents = 0;
+	
+	//array to story the probabilities of events
 	public int[][] events = new int[3][11];
+	//array to store names of events
 	public String[][] eventsName = new String[3][11];
+	//String that represents current person
 	public String profile;
+	
+	//boolean variables to be intialized as false
 	public boolean fired = false;
 	public static boolean stopOnEvent = false;
 	public boolean dead = false;
+	
+	//stores the num of times character has died
 	public static int deadNum = 0;
+	//string representations of intervals
 	public static String[] intervals = { "Years", "Months", "Days" };
+	
 	public static int currentEvent = 0;
+	
+	//scroll pane passed in from the person class
 	public ScrollPane resultBox;
+	//vbox belonging to this class that gets added to resultbox
 	public VBox resultBOX;
 	public static int numRuns = 1;
 	public int preset;
@@ -184,6 +198,7 @@ public class QuickGame  implements game {
 	public String displayResults(int years, int interval, int category, int event, boolean dead) {
 		String intervalName;
 		StringBuilder msgBox = new StringBuilder();
+		//if years, print without interval, test if dead
 		if (timeScale == 1) {
 			if (dead) {
 				msgBox.append("Event Fired at year: " + years + ", " + "Category: " + eventsName[category][0] + ", "
@@ -194,12 +209,14 @@ public class QuickGame  implements game {
 			}
 			return msgBox.toString();
 		}
+		//set interval string and print accordingly
 		if (timeScale == 12) {
 			intervalName = " month: ";
 		} else {
 			intervalName = " day: ";
 		}
 
+		//if dead, print accordingly
 		if (dead == true) {
 			msgBox.append("Event Fired at year: " + years + intervalName + interval + " category: "
 					+ eventsName[category][0] + " " + eventsName[category][event] + ". Rest in piece " + profile);
@@ -214,6 +231,7 @@ public class QuickGame  implements game {
 	}
 
 	// method to display effects to UI scene
+	// NOT IMPLEMENTED YET
 	@Override
 	public void GameEffects() {
 

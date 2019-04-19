@@ -25,7 +25,11 @@ import javafx.stage.WindowEvent;
 public class UserInterface extends Application  implements Initializable {
 
 	//declared data to be used in person
+	
+	//string array of profile names
 	public static String[] people = new String[10];
+	
+	//lists for choicebox
 	public static ObservableList<String> list1 = FXCollections.observableArrayList();
 	public static ObservableList<String> list2 = FXCollections.observableArrayList();
 	public static ObservableList<String> list3 = FXCollections.observableArrayList();
@@ -123,7 +127,7 @@ public class UserInterface extends Application  implements Initializable {
 			}
 
 			in.close();
-			// if file not found, create new file and fill with empty slot
+			// if file not found, create new file and fill with all empty slots
 		} catch (FileNotFoundException e) {
 			new File("save.txt");
 			for (int i = 0; i < 9; i++) {

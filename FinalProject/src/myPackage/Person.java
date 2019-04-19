@@ -13,6 +13,7 @@ import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 public class Person extends UserInterface implements Initializable {
+	//Intialized values for the variables to be passed in game class
 	public static int gameType = 0;
 	public static int[] timeScale = { 1, 12, 365 };
 	public static String currentPerson = "Empty Slot";
@@ -72,6 +73,8 @@ public class Person extends UserInterface implements Initializable {
 								stopOnEvent, numRuns1, resultBOX, resultBox, currentPreset);
 						currentGame.runGame();
 					} else {
+						//DETAILED GAME NOT IMPLEMENTED, TRYING TO RUN DOES NOT CAUSE ERRORS
+						//IT JUST DOESN'T DO ANYTHING UNTIL QUICK GAME IS SELECTED
 						new DetailedGame(timeScale[timeScaleChoice.getSelectionModel().getSelectedIndex()],
 								currentPerson, numRuns1, resultBOX, resultBox, currentPreset);
 					}
